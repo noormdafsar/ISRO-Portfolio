@@ -1,0 +1,396 @@
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: #c5bdb3;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header img {
+    height: 60px;
+    width: 150px;
+    margin: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #525050;
+}
+
+.header p {
+    font-size: 13px;
+    padding: 10px;
+}
+
+#elems {
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#elems1,
+#elems2,
+#elems3 {
+    width: 100%;
+    height: auto;
+}
+
+#elems2 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+#elems1 a,
+#elems3 a {
+    text-decoration: none;
+}
+
+#elems1 #img-div,
+#elems3 #img-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#img-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#img-div:hover img {
+    transform: scale(1.2);
+}
+
+#elems1 h4,
+#elems1 p,
+#elems3 h4,
+#elems3 p {
+    font-family: domain;
+    font-size: 15px;
+    color: #414140;
+}
+
+#elems1 h4 span,
+#elems3 h4 span {
+    background-color: #b73c12;
+    color: #c5bdb3;
+    margin-top: 20px;
+}
+
+#elems2 h4 {
+    font-size: 40px;
+    font-weight: 50;
+    font-family: domain;
+}
+
+#elems2 h3 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#bigtext {
+    margin-top: 40px;
+}
+
+#bigtext p {
+    background-color: #1c1c19;
+    color: #c2bab1;
+    font-family: canopee;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.page2 {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #040404;
+}
+
+.page2-left {
+    width: 100%;
+    border-right: none;
+    background-color: #c2bab1;
+    padding: 20px;
+}
+
+.page2-left img {
+    width: 100%;
+    height: auto;
+}
+
+.page2-left .heading {
+    border-bottom: 1px solid #9f9f91;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: canopee;
+    padding-bottom: 10px;
+}
+
+.page2-left .image-left img {
+    padding: 15px;
+    border: none;
+}
+
+.page2-left .text-left {
+    padding: 20px 30px;
+}
+
+.page2-left .text-left p {
+    font-size: 20px;
+    font-family: domain;
+    font-weight: 500;
+    color: #605f5e;
+}
+
+.page2-left .text-left p span {
+    font-size: 30px;
+    font-family: canopee;
+    padding: 10px;
+    border-radius: 1px;
+    color: white;
+    background-color: #040404;
+}
+
+.page2-right {
+    width: 100%;
+    background-color: #c2bab1;
+    padding: 25px;
+}
+
+.page2 .image-right video {
+    width: 100%;
+    height: auto;
+}
+
+.page2-right .text a {
+    text-decoration: none;
+}
+
+.page2-right .text p {
+    font-family: domain;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: left;
+    color: #1b1b19;
+}
+
+.page2-right .text p span {
+    font-family: canopee;
+    font-weight: 500;
+    font-size: 40px;
+    text-align: left;
+    color: #727260;
+}
+
+.page3 {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    height: auto;
+}
+
+.page3 .page3-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c19;
+    padding: 40px;
+}
+
+.page3 .page3-left p {
+    font-family: domain;
+    font-size: 40px;
+    color: #c5bdb3;
+}
+
+.page3 .page3-right img {
+    width: 20%;
+    width: 200px;
+    display: flex;
+    /* margin-left: 550px; */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.page3 .page3-left video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .header img {
+        height: 50px;
+        width: 150px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    #elems {
+        height: 400px;
+    }
+
+    #elems1,
+    #elems2,
+    #elems3 {
+        height: 400px;
+    }
+
+    #elems2 {
+        padding: 20px 40px;
+    }
+
+    #elems1 h4,
+    #elems1 p,
+    #elems3 h4,
+    #elems3 p {
+        font-size: 16px;
+    }
+
+    #elems2 h4 {
+        font-size: 50px;
+    }
+
+    #elems2 h3 {
+        font-size: 40px;
+    }
+
+    #bigtext p {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .page2 {
+        flex-direction: row;
+    }
+
+    .page2-left {
+        width: 40%;
+    }
+
+    .page2-left .heading {
+        font-size: 48px;
+    }
+
+    .page2-left .text-left p {
+        font-size: 28px;
+    }
+
+    .page2-left .text-left p span {
+        font-size: 40px;
+    }
+
+    .page2-right {
+        width: 60%;
+    }
+
+    .page2-right .text p,
+    .page2-right .text p span {
+        font-size: 60px;
+    }
+
+    .page3 .page3-left p {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header img {
+        height: 60px;
+        width: 150px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    #elems {
+        height: 500px;
+    }
+
+    #elems1,
+    #elems2,
+    #elems3 {
+        height: 500px;
+    }
+
+    #elems2 {
+        padding: 20px 60px;
+    }
+
+    #elems1 h4,
+    #elems1 p,
+    #elems3 h4,
+    #elems3 p {
+        font-size: 18px;
+    }
+
+    #elems2 h4 {
+        font-size: 60px;
+    }
+
+    #elems2 h3 {
+        font-size: 40px;
+    }
+
+    #bigtext p {
+        font-size: 80px;
+        line-height: 95px;
+    }
+
+    .page2-left .heading {
+        font-size: 64px;
+    }
+
+    .page2-left .text-left p {
+        font-size: 32px;
+    }
+
+    .page2-left .text-left p span {
+        font-size: 50px;
+    }
+
+    .page2-right .text p,
+    .page2-right .text p span {
+        font-size: 80px;
+    }
+
+    .page3 .page3-left p {
+        font-size: 48px;
+    }
+}
